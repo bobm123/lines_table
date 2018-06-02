@@ -1,5 +1,5 @@
 Welcome to Lines Table's documentation!
-======================================
+=======================================
 
 .. toctree::
    :maxdepth: 2

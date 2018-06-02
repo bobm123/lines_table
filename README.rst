@@ -30,7 +30,9 @@ A tool for converting traditional shipwrights offset tables for defining boat hu
 Features
 --------
 
-* TODO
+This project is a tool that generate a 3D model of a ship's hull given a table of points in the form of a traditional shipwright's offset or lines table. These tables contain, in theory, all the information needed to model a ship's hull, importing these individual points using 3D modeling tools can be tedious. This project aims to help with that.
+
+Two drawing applications are the target for this project: OpenSCAD and Fusion 360. OpenSCAD is designed to define objects grammatically, so seems like a good first step, but has limited ability to handle curves. Fusion 360 includes 3D modeling and design tools with API for both Python and C++. While these can be challenging to use, they unlock a rich array of design features.
 
 Credits
 -------
