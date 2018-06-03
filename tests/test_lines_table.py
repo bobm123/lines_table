@@ -36,3 +36,18 @@ def test_command_line_interface():
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
+
+def test_fie_to_di():
+    """Test feet-inch-eights to decimal inch conversion."""
+
+    # 0 feet, 0 inches, 1/8 inch
+    assert lines_table.fie_to_di('0-0-1') == .125
+
+    # 0 feet, 1 inch, 2/8
+    assert lines_table.fie_to_di('0-1-2') == 1.25
+
+    # 1 foot, 2 inch, 3/8
+    assert lines_table.fie_to_di('1-2-3') == 14.375
+
+    # No coversion needed
+    assert lines_table.fie_to_di(3.14) == 3.14
